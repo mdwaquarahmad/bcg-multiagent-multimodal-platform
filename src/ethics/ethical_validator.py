@@ -104,7 +104,8 @@ class EthicalValidator:
         principle_name = principle.value
         principle_description = self.principle_descriptions[principle]
         
-        prompt = f"""As an ethical AI validator, please evaluate the following content against the ethical principle of {principle_name.replace('_', ' ').title()}.
+        prompt = f"""
+        You are an ethical AI validator, please evaluate the following content against the ethical principle of {principle_name.replace('_', ' ').title()}.
 
 Principle description: {principle_description}
 
